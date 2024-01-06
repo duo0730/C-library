@@ -72,9 +72,46 @@ printf("\n7.double log10(double x)\n");
     ret=log10(x);
     printf("log10(%lf)=%lf\n",x,ret);
 
+printf("\n8.double pow(double x, double y)\n");
+//double pow(double x, double y) 返回x的y次冪
+    printf("值 8.0 ^ 3 = %lf\n", pow(8.0,3));
+    printf("值 3.05 ^ 1.98 = %lf\n", pow(3.05,1.98));
 
+printf("\n9.double sqrt(double x)\n");
+//double sqrt(double x) 返回x的平方根
+    printf("%lf 的平方根是 %lf\n",4.0,sqrt(4.0));
+    printf("%lf 的平方根是 %lf\n",5.0,sqrt(5.0));
 
-   return(0);
+printf("\n10.double fabs(double x)\n");
+//double fabs(double x) 返回x的絕對值
+    float a=1234;
+    float b=-344;
+ 
+   printf("%f 的絕對值是 %lf\n",a,fabs(a));
+   printf("%f 的絕對值是 %lf\n",b,fabs(b));
+
+printf("\n11.double ceil(double x)\n");
+//double ceil(double x) 返回大於或等於x的最小整數值
+    float val1=1.6;
+    float val2=2.8;
+
+    printf ("value1 = %.1lf\n", ceil(val1));
+    printf ("value2 = %.1lf\n", ceil(val2));
+
+printf("\n12.double floor(double x)\n");
+//double floor(double x)返回小於或等於x的最大整數值
+    printf("Value1 = %.1lf\n", floor(val1));
+    printf("Value2 = %.1lf\n", floor(val2));
+
+printf("\n13.double fmod(double x, double y)\n");
+//double fmod(double x, double y) 返回x除以y的餘數
+    float c=9.8;
+    float d=3.2;
+    int e=2;
+
+    printf("%f / %d 的餘數是 %lf\n",c,e, fmod(c,e));
+    printf("%f / %f 的餘數是 %lf\n",c,d, fmod(c,d));
+
 
     return 0;
 }
